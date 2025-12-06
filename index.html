@@ -5,6 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>سعرلي - منشئ عروض الأسعار</title>
+    <script>
+      // Radical fix for "White Screen" on Netlify/Vite
+      // Prevents "ReferenceError: process is not defined" crashing the app immediately
+      window.process = window.process || { env: { API_KEY: '' } };
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
