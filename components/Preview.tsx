@@ -20,7 +20,7 @@ const Preview: React.FC<PreviewProps> = ({ company, items, quotationData }) => {
           <img 
             src={company.logoUrl} 
             alt="Company Logo" 
-            className="h-32 object-contain mb-4" 
+            className="h-64 object-contain mb-4" 
           />
         )}
 
